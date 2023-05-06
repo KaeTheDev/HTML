@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+<h1>Registration Form</h1>
+<form action="/process" method="post">
+    <div>
+        <label>First Name: * <input type="text" name="firstname"> </label>
+    </div>
+
+    <div>
+        <label>Last Name: * <input type="text" name="lastname"></label>
+    </div>
+
+    <div>
+        <label>Email Address: * <input type="email" name="email"></label>
+    </div>
+
+    <div>
+        <label>Password: * <input type="password" name="password"></label>
+    </div>
+
+    <div>
+        <label>Confirm Password: * <input type="password" name="confirmpassword"></label>
+    </div>
+
+    <div>
+        <label>Birthday: <input type="date" name="birthday"></label>
+    </div>
+
+    <div>
+        <label>Gender Identity: </label><br>
+        <input type="radio" name="gender" value="Male"><label for="Male">Male</label>
+        <input type="radio" name="gender" value="Female"><label for="Female">Female</label>
+        <input type="radio" name="gender" value="Non-binary"><label for="Non-binary">Non-binary</label>
+        <input type="radio" name="gender" value="No Answer"><label for="No Answer">I prefer not to answer</label>
+    </div>
+    <div>
+        <p>A short description about myself: </p>
+        <textarea name="description" cols="20" rows="3"></textarea>
+    </div>
+    <div>
+        <label>Favorite Language:
+        <select name="programming">
+            <option value="JavaScript">JavaScript</option>
+        </select>
+    </label>
+    </div>
+    <div>
+        <input type="checkbox" name="updates">
+        <label for="updates">Yes, I would like to receive periodic email updates</label>
+    </div>
+    <input type="submit" value="Create Account">
+    <p>*Indicates a required field</p>
+</form>
+</body>
+</html>
